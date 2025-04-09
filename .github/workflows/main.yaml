@@ -38,5 +38,5 @@ jobs:
 
       - name: Stop and remove Docker container
         run: |
-          docker stop your_container_name
-          docker rm your_container_name
+          docker stop my-tests-cicd-container
+          docker rm my-tests-cicd-container
