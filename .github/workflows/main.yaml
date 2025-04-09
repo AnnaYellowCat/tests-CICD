@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Docker container
         run: |
-          docker run -d --name my-tests-cicd-container -p 8080:8080 tests
+          docker run -d -p 8080:8080 --name my-tests-cicd-container tests-cicd
 
       - name: Wait for the application to start
         run: |
